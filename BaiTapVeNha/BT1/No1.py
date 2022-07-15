@@ -22,3 +22,25 @@ def PrintSumCurrentAndPreviousNumber(Number):
         previous_number = current_number
 
 
+# Exercise 3: Print characters from a string that are present at an even index number
+def PrintEvenIndexString():
+    string = input("Nhap chuoi tu: ")
+    string_length = len(string)
+    for i in range(string_length):
+        if i % 2 == 0:
+            print(string[i])
+
+
+# Exercise 4: Remove first n characters from a string
+def Removefirstcharcter(word, n):
+    for i in range(len(word)):
+        if word[i] == n:
+            j = i
+
+            # while j < len(word):
+            #     if j + 1 == len(word):
+            #         word[j] = ""
+            #         for
+            #     else:
+            #         word[j] = word[j + 1]
+            #         j += 10
