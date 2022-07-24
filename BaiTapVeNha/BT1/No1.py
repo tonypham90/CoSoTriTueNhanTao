@@ -31,16 +31,8 @@ def PrintEvenIndexString():
             print(string[i])
 
 
-# Exercise 4: Remove first n characters from a string
-def Removefirstcharcter(word, n):
-    for i in range(len(word)):
-        if word[i] == n:
-            j = i
+# Exercise 5: Check The last number in the list is the same
+def thelastissamethefirst(Numberlist):
+    print(f"Give numberlist {Numberlist}")
+    print(f"Result:{Numberlist[0]==Numberlist[-1]}")
 
-            # while j < len(word):
-            #     if j + 1 == len(word):
-            #         word[j] = ""
-            #         for
-            #     else:
-            #         word[j] = word[j + 1]
-            #         j += 10
