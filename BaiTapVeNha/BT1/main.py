@@ -35,5 +35,8 @@ if __name__ == '__main__':
 
     print_hi('This is 4th exercise')
     No4.printallAgumentinput(10, 13, 15, 52, 266)
+    Result = No4.Caculate2Number(20,5)
+    print(Result)
+    No4.show_employee("Tony")
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
