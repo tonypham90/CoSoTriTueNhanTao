@@ -1,33 +1,34 @@
-def bfsRead(graph, start, end):
+import ImplementStack
+
+
+def dfsRead(graph, start, end):
     print("In cac nut duoc duyet qua:")
     visited = []  # List to keep track of visited nodes.
-    queue = []  # Initialize a queue
+    stack = ImplementStack.Stack()
     visited.append(start)
-    queue.append(start)
+    stack.push(start)
 
-    while queue:
-        s = queue.pop(0)
+    while stack.data:
+        s = stack.pop()
         print(s, end=" ")
         if s == end:
             return
         elif s not in graph:
             continue
-        else:
-            for neighbour in graph[s]:
-                if neighbour not in visited:
-                    visited.append(neighbour)
-                    queue.append(neighbour)
+        for neighbour in graph[s]:
+            if neighbour not in visited:
+                visited.append(neighbour)
+                stack.push(neighbour)
 
 
-def bfsRoad(graph, start, end):
+def dfsRoad(graph, start, end):
     print("In duong di:")
     visited = []  # List to keep track of visited nodes.
-    queue = [[start]]  # Initialize a queue
-    # maintain a queue of paths
-    # push the first path into the queue
-    while queue:
-        # get the first path from the queue
-        path = queue.pop(0)
+    stack = ImplementStack.Stack()
+    stack.push(start)
+    while stack.data:
+        # get the first path from the stack
+        path = stack.pop()
         # get the last node from the path
         node = path[-1]
         # path found
@@ -38,11 +39,11 @@ def bfsRoad(graph, start, end):
             if neighbour not in visited:
                 new_path = list(path)
                 new_path.append(neighbour)
-                queue.append(new_path)
+                stack.push(new_path)
 
 
-def RunBFS(Note, Grab, Start, End):
+def RunDFS(Note, Grab, Start, End):
     print(Note)
-    print(bfsRead(Grab, Start, End))
-    print(bfsRoad(Grab, Start, End))
+    print(dfsRead(Grab, Start, End))
+    print(dfsRoad(Grab, Start, End))
     print("--------------------")

@@ -1,15 +1,23 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-# Press the green button in the gutter to run the script.
-import BFS
-import Graph
+import BFS as b
+import DFS as d
+import Graph as g
 
 if __name__ == '__main__':
-    print(BFS.bfsNoRoad(Graph.SAMPLE1, "A", "G"))
-    print(BFS.bfsWithRoad(Graph.SAMPLE2, "1", "11"))
+    # BFS
+    print("Phan 1:Thuat toan BFS")
+    print("------------------------------------")
+    b.RunBFS("Do thi 1:", g.Graph1, "A", "F")
+    b.RunBFS("Do thi 2:", g.Graph2, "1", "11")
+    b.RunBFS("Do thi 3:", g.Graph3, "s", "g")
+    b.RunBFS("Do thi 4:", g.Graph4, "s", "g")
+    b.RunBFS("Do thi 5:", g.Graph5, "A", "G")
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    # DFS
+
+    print("Phan 2:Thuat toan DFS ")
+    print("------------------------------------")
+    d.RunDFS("Do thi 1:", g.Graph1, "A", "F")
+    d.RunDFS("Do thi 2:", g.Graph2, "1", "11")
+    d.RunDFS("Do thi 3:", g.Graph3, "s", "g")
+    d.RunDFS("Do thi 4:", g.Graph4, "s", "g")
+    d.RunDFS("Do thi 5:", g.Graph5, "A", "G")
