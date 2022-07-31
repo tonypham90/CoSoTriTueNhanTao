@@ -22,3 +22,9 @@ def Caculate2Number(a, b):
 # If the salary is missing in the function call then assign default value 9000 to salary
 def show_employee(Name, Salary=9000):
     print(Name, Salary)
+
+
+# Exercise 9: Find the largest item from a given list
+def largest_Number(*listNumber):
+    maxnumber = max(listNumber)
+    print(f"max number is {maxnumber}")

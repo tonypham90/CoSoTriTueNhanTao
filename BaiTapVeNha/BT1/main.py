@@ -2,10 +2,9 @@
 import No1
 import No2
 import No3
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 import No4
+import No5
+import No6
 
 
 def print_hi(name):
@@ -34,9 +33,18 @@ if __name__ == '__main__':
     # No3.PrintGoodNumber([12, 75, 150, 180, 145, 525, 50])
 
     print_hi('This is 4th exercise')
-    No4.printallAgumentinput(10, 13, 15, 52, 266)
-    Result = No4.Caculate2Number(20,5)
-    print(Result)
-    No4.show_employee("Tony")
+    # No4.printallAgumentinput(10, 13, 15, 52, 266)
+    # Result = No4.Caculate2Number(20,5)
+    # print(Result)
+    # No4.show_employee("Tony")
+    # No4.largest_Number(1,13,4124,2,5,6,7,8,2,345,3)
+    print_hi('This is 5th exercise')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    # No5.string_first_middle_last("Summertimeisstupid")
+    # No5.Counterintelligence("1235dkjla412''a..,")
+    # No5.CountUniqLetter("Summertimeisstupid")
+    # No5.Split_String("Summer-Time-So-Nice", "-")
+
+    print_hi('This is 6th exercise')
+    No6.mixList([3, 6, 9, 12, 15, 18, 21],[4, 8, 12, 16, 20, 24, 28])
+

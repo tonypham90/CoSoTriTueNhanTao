@@ -4,6 +4,10 @@ import Graph as g
 
 if __name__ == '__main__':
     # BFS
+    print("Co So Tri Tue Nhan Tao"
+          "\nBai Tap Lap1: BFS va DFS setup"
+          "\n Sinh Vien Pham Tuan Anh\n"
+          "MSSV: 21880005\n")
     print("Phan 1:Thuat toan BFS")
     print("------------------------------------")
     b.RunBFS("Do thi 1:", g.Graph1, "A", "F")
