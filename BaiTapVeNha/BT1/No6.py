@@ -18,3 +18,34 @@ def mixList(firstList, SecondList):
     print(f"Element at odd-index positions from list one\n{odd_list}")
     print(f'Element at even-index positions from list two\n{even_list}')
     print(f'Printing Final third list\n{third_list}')
+
+
+# Exercise 2: Remove and add item in a list
+def RemoveAndAddElement(ListNumber):
+    print(f'Original list {ListNumber}')
+    element = ListNumber.pop(4)
+    print(f'After remove element at index 4{ListNumber}')
+    ListNumber.insert(2, element)
+    print(f'After adding element at index 2 {ListNumber}')
+    ListNumber.append(element)
+    print(f'After add element at the last position of the list {ListNumber}')
+
+
+# Exercise 6: Find the intersection (common) of two sets and remove those elements from the first set
+def FindAndSetUnique(firstList, secondList):
+    print(f"print {firstList}")
+    intersection_list = firstList.intersection(secondList)
+    for element in intersection_list:
+        firstList.remove(element)
+    print(f'Intersection is {intersection_list}')
+    print(f'first set after remove comment: {firstList}')
+
+
+# Exercise 8: Iterate a given list and check if a given element exists as a key’s value in a dictionary. If not, delete it from the list
+
+def Doublecheck(listElement):
+    list_unique = []
+    for element in listElement.values():
+        if element not in list_unique:
+            list_unique.append(element)
+    print(f'Result: {list_unique}')

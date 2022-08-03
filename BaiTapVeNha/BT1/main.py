@@ -46,5 +46,7 @@ if __name__ == '__main__':
     # No5.Split_String("Summer-Time-So-Nice", "-")
 
     print_hi('This is 6th exercise')
-    No6.mixList([3, 6, 9, 12, 15, 18, 21],[4, 8, 12, 16, 20, 24, 28])
-
+    # No6.mixList([3, 6, 9, 12, 15, 18, 21], [4, 8, 12, 16, 20, 24, 28])
+    # No6.RemoveAndAddElement([34, 54, 67, 89, 11, 43, 94])
+    # No6.FindAndSetUnique({23, 42, 65, 57, 78, 83, 29}, {57, 83, 29, 67, 73, 43, 48})
+    # No6.Doublecheck({'Jhon': 47, 'Emma': 69, 'Kelly': 76, 'Jason': 97})
