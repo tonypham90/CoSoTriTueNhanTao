@@ -1,4 +1,4 @@
-# Exercise 1: Create a list by picking an odd-index items from the first list and even index items from the second
+# Exercise 1: Create a current_list by picking an odd-index items from the first current_list and even index items from the second
 def mixList(firstList, SecondList):
     odd_list = []
     even_list = []
@@ -20,7 +20,7 @@ def mixList(firstList, SecondList):
     print(f'Printing Final third list\n{third_list}')
 
 
-# Exercise 2: Remove and add item in a list
+# Exercise 2: Remove and add item in a current_list
 def RemoveAndAddElement(ListNumber):
     print(f'Original list {ListNumber}')
     element = ListNumber.pop(4)
@@ -41,7 +41,7 @@ def FindAndSetUnique(firstList, secondList):
     print(f'first set after remove comment: {firstList}')
 
 
-# Exercise 8: Iterate a given list and check if a given element exists as a key’s value in a dictionary. If not, delete it from the list
+# Exercise 8: Iterate a given current_list and check if a given element exists as a key’s value in a dictionary. If not, delete it from the current_list
 
 def Doublecheck(listElement):
     list_unique = []

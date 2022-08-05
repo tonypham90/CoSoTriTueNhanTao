@@ -31,7 +31,7 @@ def PrintEvenIndexString():
             print(string[i])
 
 
-# Exercise 5: Check The last number in the list is the same
+# Exercise 5: Check The last number in the current_list is the same
 def thelastissamethefirst(Numberlist):
     print(f"Give numberlist {Numberlist}")
     print(f"Result:{Numberlist[0]==Numberlist[-1]}")

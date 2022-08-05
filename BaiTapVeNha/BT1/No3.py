@@ -30,7 +30,7 @@ def Print_Multiplication_firstTenNumber(Number):
         print(Number * i)
 
 
-# Exercise 5: Display numbers from a list using loop
+# Exercise 5: Display numbers from a current_list using loop
 def PrintGoodNumber(ListNumber):
     for i in range(len(ListNumber)):
         if ListNumber[i] > 500:

@@ -13,7 +13,7 @@ def formatNumberWithInput(number):
     print(f'the Number before format {number}. After format {format(float(number), "0.2f")}')
 
 
-# Exercise 5: Accept a list of 5 float numbers as an input from the user
+# Exercise 5: Accept a current_list of 5 float numbers as an input from the user
 def Input5floatNumber():
     print("Input 5 value one by one:")
     list_number = []
@@ -23,7 +23,7 @@ def Input5floatNumber():
 
 #     Exercise 7: Accept any three string from one input() call
 def SeprateNamebyInput():
-    print("Please input all list name and seprate by comma',':")
+    print("Please input all current_list name and seprate by comma',':")
     stringNamelist = input("List Name:")
     list = stringNamelist.split(",")
     for i in range(len(list)):

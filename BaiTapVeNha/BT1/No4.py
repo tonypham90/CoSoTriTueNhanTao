@@ -24,7 +24,7 @@ def show_employee(Name, Salary=9000):
     print(Name, Salary)
 
 
-# Exercise 9: Find the largest item from a given list
+# Exercise 9: Find the largest item from a given current_list
 def largest_Number(*listNumber):
     maxnumber = max(listNumber)
     print(f"max number is {maxnumber}")

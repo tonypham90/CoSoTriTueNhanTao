@@ -1,10 +1,14 @@
 # This is a sample Python script.
 import No1
+import No12
 import No2
 import No3
 import No4
 import No5
 import No6
+import No7
+import No8
+import No9
 
 
 def print_hi(name):
@@ -50,3 +54,29 @@ if __name__ == '__main__':
     # No6.RemoveAndAddElement([34, 54, 67, 89, 11, 43, 94])
     # No6.FindAndSetUnique({23, 42, 65, 57, 78, 83, 29}, {57, 83, 29, 67, 73, 43, 48})
     # No6.Doublecheck({'Jhon': 47, 'Emma': 69, 'Kelly': 76, 'Jason': 97})
+
+    print_hi('This is 7th exercise: List Exercise')
+    # No7.ReverseList([100, 200, 300, 400, 500])
+    # No7.Concatenate(["M", "na", "i", "Ke"], ["y", "me", "s", "lly"])
+    # No7.RemoveEmptyElement(["Mike", "", "Emma", "Kelly", "", "Brad"])
+    # No7.replace_elementList([5, 10, 15, 20, 25, 50, 20], 20, 200)
+
+    print_hi('This is 8th exercise: Dictionary Exercise')
+    # No8.ConvertListToDict(['Ten', 'Twenty', 'Thirty'], [10, 20, 30])
+    # No8.CreateNewElementWithDefaultValue(['Kelly', 'Emma'], {"designation": 'Developer', "salary": 8000})
+    # No8.GetDictInfByListKey({
+    #     "name": "Kelly",
+    #     "age": 25,
+    #     "salary": 8000,
+    #     "city": "New york"}, ["name", "salary"])
+    # No8.IsValuePresentInDict({'a': 100, 'b': 200, 'c': 300}, 200)
+
+    print_hi('This is 9th exercise: Set Exercise')
+    # No9.AddListElementToASet({"Yellow", "Orange", "Black"}, ["Blue", "Green", "Red"])
+    # No9.Remove_Multiple_Value({10, 20, 30, 40, 50}, {10, 20, 30})
+    # No9.TakeSameValueInBothSet({10, 20, 30, 40, 50}, {30, 40, 50,50 60, 70})
+
+    print_hi('This is 9th exercise: OOP Exercise')
+    Bus = No12.Vehical("School Volvo", 180, 12)
+    Bus.ShowVehicalInf()
+    print(Bus.seating_capacity(12))
