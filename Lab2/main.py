@@ -41,7 +41,6 @@ class run_Graph:
         DFS(self.Graph.Name, self.Graph.adjacency_list, self.Start, self.Goal)
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     # DoThiMau_Run_Astar = Astar(DoThiMau.adjacency_list, DoThiMau.heuristic)
     # DoThiMau_Run_Astar.a_star_algorithm('A', 'D')
@@ -55,14 +54,14 @@ if __name__ == '__main__':
     RunDoThi2 = run_Graph()
     RunDoThi3 = run_Graph()
     RunDoThi4 = run_Graph()
-    RunDoThi1.Get_Graph(DoThi1, 'S', 'G')
-    RunDoThi1.run_Graph()
+    # RunDoThi1.Get_Graph(DoThi1, 'S', 'G')
+    # RunDoThi1.run_Graph()
     RunDoThi2.Get_Graph(DoThi2, 's', 'g')
     RunDoThi2.run_Graph()
-    RunDoThi3.Get_Graph(DoThi3, 'A', 'G')
-    RunDoThi3.run_Graph()
-    RunDoThi4.Get_Graph(DoThi4, 'Arad', 'Bucharest')
-    RunDoThi4.run_Graph()
+    # RunDoThi3.Get_Graph(DoThi3, 'A', 'G')
+    # RunDoThi3.run_Graph()
+    # RunDoThi4.Get_Graph(DoThi4, 'Arad', 'Bucharest')
+    # RunDoThi4.run_Graph()
 
     # print(min(DoThi1.heuristic, key=DoThi1.heuristic.get))
     # DFS(DoThi1.Name, DoThi1.adjacency_list, 'S', 'G')

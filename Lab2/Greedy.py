@@ -43,9 +43,9 @@ class Graph:
 
         while len(open_list) > 0:
             n = None
-            print(f'Open list:{open_list}')
-            print(f'Parent list:{parents}')
-            print(f'Close list {closed_list}')
+            # print(f'Open list:{open_list}')
+            # print(f'Parent list:{parents}')
+            # print(f'Close list {closed_list}')
 
             # find a node with the lowest value of f() - evaluation function
             for v in open_list:

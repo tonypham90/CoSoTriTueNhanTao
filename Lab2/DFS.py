@@ -7,18 +7,20 @@ def dfsRead(graph, start, end):
     stack = ImplementStack.Stack()
     visited.append(start)
     stack.push(start)
+    count =0
 
     while stack.data:
         s = stack.pop()
         print(s, end=" ")
         if s == end:
-            return
+            return print(f'DFS count ={count}')
         elif s not in graph or graph[s] is []:
             continue
         for (neighbour, value) in graph[s]:
             if neighbour not in visited:
                 visited.append(neighbour)
                 stack.push(neighbour)
+                count+=1
 
 
 def dfsRoad(graph, start, end):
@@ -39,10 +41,10 @@ def dfsRoad(graph, start, end):
         visited.append(node)
         # path found
         if node == end:
-            print(f'DFS parent{parents}')
+            print(f'DFS parent{len(parents)}')
             return path
-        if node not in graph:
-            continue
+        # if node not in graph:
+        #     continue
         # enumerate all adjacent nodes, construct a new path and push it into the queue
         for (neighbour, value) in graph.get(node, []):
             if neighbour not in visited:
@@ -58,5 +60,5 @@ def dfsRoad(graph, start, end):
 def RunDFS(Note, Grab, Start, End):
     print(f'Chay do thi theo giai thuat DFS{Note}')
     print(dfsRead(Grab, Start, End))
-    print(dfsRoad(Grab, Start, End))
+    # print(dfsRoad(Grab, Start, End))
     print("--------------------")
